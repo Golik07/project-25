@@ -1,0 +1,148 @@
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 734px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1206px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url(../fonts/Epilogue/static/Epilogue-Light.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url(../fonts/Epilogue/static/Epilogue-Regular.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Epilogue;
+  src: url(../fonts/Epilogue/static/Epilogue-SemiBold.ttf) format('truetype');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-style: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 5px 0;
+
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
+
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+}
+
+.scrollToTopBtn:hover {
+  background-color: #1e2827;
+}
+
+.scrollToTopBtn:hover .scroll-btn-icon {
+  fill: #fff;
+}
+
+.scroll-btn-icon {
+  fill: #1e2827;
+}
+
+.scroll-btn {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
